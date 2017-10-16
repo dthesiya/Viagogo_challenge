@@ -1,6 +1,17 @@
 # Viagogo_challenge
 A java application containing two versions v1 and v2 to implement grid application having events at different coordinates.
 
+## How to run
+* go to src directory for base version
+
+for base version,
+* compile using 'javac v1/Driver.java'
+* run using 'java v1.Driver'
+
+for enhanced version,
+* compile using 'javac v2/Driver.java'
+* run using 'java v2.Driver'
+
 ### Scenario
 * Program randomly generates seed data.
 * Program operates in a 2D world.
@@ -21,3 +32,5 @@ A java application containing two versions v1 and v2 to implement grid applicati
 * User has a machine with java8 installed.
 * User provides input correctly(e.g. <b>4,2</b> and not like 4,a2 or out of grid range coordinates)
 * Event ids are generated like <b>int('xy')</b> in v1 and <b>int('xyi')</b> in v2 where i is index of event at same xy. So assumption made here is that no two randomly generated events can collide their coordinates in such a way that it may conflict with event ids(for example, 3720 can mean x=3, y=7 and i=20. It can also mean x=37, y=2 and i=0).
+* In v1, it has 20 randomly generated events. One event has three classes of tickets and max ticket amout is $50.(all numeric parameters can be changed.)
+* In v2, the world now ranges from -20 to 20 on both axis. It has total 25 randomly generated events considering that one place can have multiple events. It also has three classes of tickets for each event and max ticket amount is $50.(all numeric parameters can be changed.)
