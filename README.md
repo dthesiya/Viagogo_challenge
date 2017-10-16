@@ -2,7 +2,7 @@
 A java application containing two versions v1 and v2 to implement grid application having events at different coordinates.
 
 ## How to run
-* go to src directory for base version
+* go to src directory
 
 for base version,
 * compile using 'javac v1/Driver.java'
